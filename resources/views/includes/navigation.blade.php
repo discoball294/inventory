@@ -3,9 +3,9 @@
     <!-- Logo -->
     <a href="index2.html" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>A</b>LT</span>
+        <span class="logo-mini"><b>IN</b>VT</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>Admin</b>LTE</span>
+        <span class="logo-lg"><b>Inventory</b> Barang</span>
     </a>
 
     <!-- Header Navbar -->
@@ -23,14 +23,14 @@
                     <!-- Menu Toggle Button -->
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <!-- The user image in the navbar-->
-                        <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+
                         <!-- hidden-xs hides the username on small devices so only the image appears. -->
                         <span class="hidden-xs">Alexander Pierce</span>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- The user image in the menu -->
                         <li class="user-header">
-                            <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
 
                             <p>
                                 Alexander Pierce - Web Developer
@@ -75,16 +75,6 @@
     <section class="sidebar">
 
         <!-- Sidebar user panel (optional) -->
-        <div class="user-panel">
-            <div class="pull-left image">
-                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-            </div>
-            <div class="pull-left info">
-                <p>Alexander Pierce</p>
-                <!-- Status -->
-                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-            </div>
-        </div>
 
         <!-- search form (Optional) -->
         <form action="#" method="get" class="sidebar-form">
@@ -100,7 +90,7 @@
 
         <!-- Sidebar Menu -->
         <ul class="sidebar-menu">
-            <li class="header">HEADER</li>
+            <li class="header">HOME</li>
             <!-- Optionally, you can add icons to the links -->
             <li class="active"><a href="#"><i class="fa fa-cubes"></i> <span>List Barang</span></a></li>
             <li><a href="#"><i class="fa fa-industry"></i> <span>List Gudang</span></a></li>
