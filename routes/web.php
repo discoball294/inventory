@@ -16,3 +16,35 @@ Route::get('/',[
     'uses' => 'BarangController@getListBarang',
     'as' => 'barang'
 ]);
+Route::group(['prefix' => 'barang'], function (){
+    Route::post('/add',[
+        'uses' => 'BarangController@addBarang',
+        'as' => 'tambah_barang'
+    ]);
+    Route::post('/edit/{id}',[
+        'uses' => 'BarangController@editBarang',
+        'as' => 'edit_barang'
+    ]);
+    Route::get('/delete/{id}',[
+        'uses' => 'BarangController@deleteBarang',
+        'as' => 'delete_barang'
+    ]);
+});
+Route::group(['prefix' => 'gudang'], function (){
+    Route::get('/',[
+        'uses' => 'GudangController@getListGudang',
+        'as' => 'gudang'
+    ]);
+    Route::post('/add',[
+        'uses' => 'GudangController@addGudang',
+        'as' => 'tambah_gudang'
+    ]);
+    Route::post('/edit/{id}',[
+        'uses' => 'GudangController@editGudang',
+        'as' => 'edit_barang'
+    ]);
+    Route::get('/delete/{id}',[
+        'uses' => 'GudangController@deleteGudang',
+        'as' => 'delete_barang'
+    ]);
+});

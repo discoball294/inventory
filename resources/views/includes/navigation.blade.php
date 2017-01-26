@@ -92,8 +92,8 @@
         <ul class="sidebar-menu">
             <li class="header">HOME</li>
             <!-- Optionally, you can add icons to the links -->
-            <li class="active"><a href="#"><i class="fa fa-cubes"></i> <span>List Barang</span></a></li>
-            <li><a href="#"><i class="fa fa-industry"></i> <span>List Gudang</span></a></li>
+            <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{ route('barang') }}"><i class="fa fa-cubes"></i> <span>List Barang</span></a></li>
+            <li class="{{ Request::is('gudang') ? 'active' : '' }}"><a href="{{ route('gudang') }}"><i class="fa fa-industry"></i> <span>List Gudang</span></a></li>
             <li class="treeview">
                 <a href="#"><i class="fa fa-file-text-o"></i> <span>Kartu Stok</span>
                     <span class="pull-right-container">
