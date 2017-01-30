@@ -16,6 +16,7 @@ Route::get('/',[
     'uses' => 'BarangController@getListBarang',
     'as' => 'barang'
 ]);
+
 Route::group(['prefix' => 'barang'], function (){
     Route::post('/add',[
         'uses' => 'BarangController@addBarang',
@@ -45,6 +46,28 @@ Route::group(['prefix' => 'gudang'], function (){
     ]);
     Route::get('/delete/{id}',[
         'uses' => 'GudangController@deleteGudang',
+        'as' => 'delete_barang'
+    ]);
+});
+Route::group(['prefix' => 'transaksi'], function (){
+    Route::get('/',[
+        'uses' => 'TransaksiController@fetchGudangAndBarang',
+        'as' => 'transaksi'
+    ]);
+    Route::get('/unit/{id}',[
+        'uses' => 'TransaksiController@getUnit',
+        'as' => 'unit'
+    ]);
+    Route::post('/temp',[
+        'uses' => 'TransaksiController@insertTemp',
+        'as' => 'temp'
+    ]);
+    Route::post('/save',[
+        'uses' => 'TransaksiController@saveTransaksi',
+        'as' => 'save'
+    ]);
+    Route::get('/delete/{id}',[
+        'uses' => 'BarangController@deleteBarang',
         'as' => 'delete_barang'
     ]);
 });

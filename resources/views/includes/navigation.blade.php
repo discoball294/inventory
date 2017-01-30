@@ -94,13 +94,14 @@
             <!-- Optionally, you can add icons to the links -->
             <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{ route('barang') }}"><i class="fa fa-cubes"></i> <span>List Barang</span></a></li>
             <li class="{{ Request::is('gudang') ? 'active' : '' }}"><a href="{{ route('gudang') }}"><i class="fa fa-industry"></i> <span>List Gudang</span></a></li>
-            <li class="treeview">
-                <a href="#"><i class="fa fa-file-text-o"></i> <span>Kartu Stok</span>
+            <li class="treeview {{ Request::is('transaksi') ? 'active' : '' }}">
+                <a href="#"><i class="fa fa-file-text-o"></i> <span>Transaksi</span>
                     <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
                 </a>
                 <ul class="treeview-menu">
+                    <li class="{{ Request::is('transaksi') ? 'active' : '' }}"><a href="{{ route('transaksi') }}">Transaksi</a></li>
                     <li><a href="#">Stok Masuk</a></li>
                     <li><a href="#">Stok Keluar</a></li>
                 </ul>
